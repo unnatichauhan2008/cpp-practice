@@ -2,7 +2,8 @@
 using namespace std;
 
 int main(){
-float rate;
+
+float rate, simpleinterest;
 int principal,time;
 cout<<"The principal amount is:";
 cin>>principal;
@@ -13,13 +14,10 @@ cin>>time;
 cout<<"The rate of interest is:";
 cin>>rate;
 
-int simpleinterest= int(rate)*principal*time / 100;
+ simpleinterest= (rate*principal*time) / 100;
 cout<<"The simpleinterest is: "<<simpleinterest;
 
 return 0;
-
-
-
 
 
 }
