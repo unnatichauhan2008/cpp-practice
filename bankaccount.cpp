@@ -56,6 +56,24 @@ public:
         }
     }
 
+    void transferMoney()
+    {
+        int transfer_money;
+
+        cout<<"Enter amount to be transferred: ";
+        cin>>transfer_money;
+        if(transfer_money<=balance){
+            cout<<"Transfer successful"<<endl;
+            balance= balance-transfer_money;
+
+        }
+        else{
+            cout<<"Transfer fail."<<endl;
+        }
+
+
+    }
+
     
     void displayAccount()
     {
@@ -75,6 +93,7 @@ int main()
     acc.depositMoney();
     acc.showBalance();
     acc.withdrawMoney();
+    acc.transferMoney();
     acc.displayAccount();
 
     return 0;
