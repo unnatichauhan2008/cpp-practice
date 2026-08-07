@@ -3,6 +3,7 @@
 using namespace std;
 
 class customer
+
 {
     private:
     int total_bill;
@@ -31,7 +32,7 @@ class customer
     
     {
 
-        cout<<"\n---------------------MENU-------------------------\n";
+        cout<<"\n-----------------------MENU-----------------------------\n";
         cout<<"burger:            Rs.200 "<<endl;
         cout<<"pizza:             Rs.500 "<<endl;
         cout<<"coke:              Rs.80  "<<endl;
@@ -95,5 +96,6 @@ a.displayData();
 
 
 return 0;
+
 
     }

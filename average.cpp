@@ -14,10 +14,11 @@ cin>>num3;
  
 int AVERAGE= (num1+num2+num3)/3;
 cout<<"The average is: "<<AVERAGE;
+cout<<endl;
+cout<<"The average is: "<<AVERAGE<<endl;
+
 
 return 0;
+        
+    }
 
-
-
-
-}
