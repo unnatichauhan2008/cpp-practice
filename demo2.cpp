@@ -1,47 +1,50 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-class employee
-{
-public:
-    static int count;
+class complex{
+
+    int a;
+    int b;
+
+    public:
+    void setData(int v1, int v2){
+        a=v1;
+        b=v2;
+
+
+
+
+    }
+
+    void setDatabySum( complex o1,  complex o2){
+a=o1.a+o2.a;
+b=o1.b+o2.b;
+
+    }
+    
+
+
+    void printnumber(){
+
+        cout<<"The complex number is: "<<a<<" + "<<b<<"i "<<endl;
+
+    }
+    
 };
 
-int employee::count = 0;
+int main(){
 
-int main()
-{
+    complex c1,c2,c3;
 
-    employee Aman;
-    employee Rahul;
+    c1.setData(1,2);
+    c1.printnumber();
 
-    employee::count++;
+    c2.setData(3,4);
+    c2.printnumber();
 
-    cout << employee::count << endl;
+    c3.setDatabySum(c1,c2);
+    c3.printnumber();
 
-    employee::count++;
-    cout << employee::count << endl;
+
+    return 0;
 }
-
-// class student{
-
-// public:
-// int age;
-
-// void displayData(){
-// cout<<" age is: "<<age<<endl;
-
-//}
-
-//};
-// int main(){
-// student Harsh;
-// student Rahul;
-
-// Harsh.age=18;
-// Rahul.age=13;
-// cout<<"Harsh's ";
-// Harsh.displayData();
-
-// cout<<"Rahul's ";
-// Rahul.displayData();
