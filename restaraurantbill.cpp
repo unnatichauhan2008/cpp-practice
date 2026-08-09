@@ -33,10 +33,10 @@ class customer
     {
 
         cout<<"\n-----------------------MENU-----------------------------\n";
-        cout<<"burger:            Rs.200 "<<endl;
-        cout<<"pizza:             Rs.500 "<<endl;
-        cout<<"coke:              Rs.80  "<<endl;
-        cout<<"coffee:            Rs.120 "<<endl;
+        cout<<"1.burger:            Rs.200 "<<endl;
+        cout<<"2.pizza:             Rs.500 "<<endl;
+        cout<<"3.coke:              Rs.80  "<<endl;
+        cout<<"4.coffee:            Rs.120 "<<endl;
 
 
     }
