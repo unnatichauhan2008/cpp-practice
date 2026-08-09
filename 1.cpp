@@ -1,23 +1,53 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+class complex{
+    int a,b;
+
+    public:
+    void setData(int v1){
     
-    for(int i=0;i<=100;i++){
+        a=v1;
+        b=v1*v1;
+    }
 
-        cout<<i<<endl;
+     int sumComplex(complex o1, complex o2){
+        a=o1.a+o2.a;
+        b=a*a;
 
-        if(i==2){
-            continue;
-        }
     }
 
 
+    int printNumber(){
+
+        cout<<"Your complex number is: "<<a<<" +"<<b<<"i "<<endl;
+
+
+    }
+
+   
+
+};
+
+
+int main(){
+    complex c1,c2,c3;
+    c1.setData(2);
+    c1.printNumber();
+
+    c2.setData(3);
+    c2.printNumber();
+
+
+    c3.sumComplex(c1,c2);
+    c3.printNumber();
 
 
 
 
 
-return 0;
 
+
+
+    return 0;
 }

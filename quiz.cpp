@@ -21,7 +21,7 @@ public:
         cout << "Enter your name: ";
         cin >> Name;
 
-        cout << "------------------------WELCOME TO THE GAME.-------------------------" << endl;
+        cout << "------------------------WELCOME TO THE GAME--------------------------" << endl;
     }
 
     void question1()

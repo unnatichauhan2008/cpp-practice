@@ -1,17 +1,17 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main(){
-int n;
+int main()
+{
+    int n;
 
-cout<<"Enter a number:";
-cin>>n;
+    cout << "Enter a number:";
+    cin >> n;
 
-for(int i=1; i <=10; i++){
-cout<<n*i<<endl;
+    for (int i = 1; i <= 10; i++)
+    {
+        cout << n * i << endl;
+    }
+
+    return 0;
 }
-
-return 0;
-}
-
-
