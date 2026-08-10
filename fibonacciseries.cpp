@@ -10,11 +10,11 @@ return fib(n-2)+ fib(n-1);
 
 int main(){
 int p;
-cout<<"enter a value: ";
+cout<<"enter the value: ";
 cin>>p;
+cout<<"The fibonacci series of the term at position:" <<p<<"is"<<fib(p);
 
-cout<<"the term in fibonacci sequence at position "<<p<<" is: "<<fib(p)<<endl; 
- return 0;
+return 0;
 }
 
 
