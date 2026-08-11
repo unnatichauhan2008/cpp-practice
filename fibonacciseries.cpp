@@ -12,7 +12,7 @@ int main(){
 int p;
 cout<<"enter the value: ";
 cin>>p;
-cout<<"The fibonacci series of the term at position:" <<p<<"is"<<fib(p);
+cout<<"The fibonacci series of the term at position: " <<p<<" is "<<fib(p);
 
 return 0;
 }
