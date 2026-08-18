@@ -1,6 +1,6 @@
 //even or odd
 
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
 
@@ -44,36 +44,58 @@ using namespace std;
 
 // }
 
-class factorial{
-public:
-    int n;
-    int factorial=1;
+// class factorial{
+// public:
+//     int n;
+//     int factorial=1;
 
-    void setData(){
-        cout<<"enter your number: ";
-        cin>>n;
-    }
+//     void setData(){
+//         cout<<"enter your number: ";
+//         cin>>n;
+//     }
 
-    void calculateFactorial(){
-        int temp=n;
+//     void calculateFactorial(){
+//         int temp=n;
         
-        while(temp>0){
+//         while(temp>0){
 
-            factorial=factorial*temp;
-            temp--;
+//             factorial=factorial*temp;
+//             temp--;
+//         }
+//     }
+
+//     void displayData(){
+//         cout<<"the factorial of "<<n<<"is "<<factorial<<endl;
+//     }
+// };
+
+// int main(){
+//     factorial obj;
+//     obj.setData();
+//     obj.calculateFactorial();
+//     obj.displayData();
+
+//     return 0;
+// }
+
+
+
+// Function to print a square pattern of stars
+void pattern1(int N) {
+    // Outer loop to handle rows
+    for (int i = 0; i < N; i++) {
+        // Inner loop to handle columns for each row
+        for (int j = 0; j< N; j++) {
+            // Print a star followed by a space
+                    cout <<"* " ;
+
         }
+        // After printing stars in a row, move to the next line
+        cout<<endl;
     }
+}
 
-    void displayData(){
-        cout<<"the factorial of "<<n<<"is "<<factorial<<endl;
-    }
-};
-
-int main(){
-    factorial obj;
-    obj.setData();
-    obj.calculateFactorial();
-    obj.displayData();
-
+int main() {
+    pattern1(5); // Call the function to print the pattern
     return 0;
 }
