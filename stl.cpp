@@ -204,11 +204,12 @@ using namespace std;
 // cout<<cnt;
 // }
 
-int main(){
-    string s="123";
-    do{
-        cout<<s<<endl;
-    }
-    while(next_permutation(s.begin(),s.end()));
-    return 0;
-    }
+// int main(){
+//     string s="123";
+//     do{
+//         cout<<s<<endl;
+//     }
+//     while(next_permutation(s.begin(),s.end()));
+//     return 0;
+//     }
+
