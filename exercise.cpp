@@ -1,63 +1,88 @@
-#include<bits/stdc++.h>
-using namespace std;
+// #include<bits/stdc++.h>
+// using namespace std;
 
-class SimpleCalculator{
-    public:
-    int x,y;
+// class SimpleCalculator{
+//     public:
+//     int x,y;
 
-void setData(){
-cout<<"Enter the value of x: ";
-cin>>x;
+// void setData(){
+// cout<<"Enter the value of x: ";
+// cin>>x;
 
-cout<<endl;
-cout<<"Enter the value of y: ";
-cin>>y;
-}
-void displayData(){
-    cout<<"The sum of two numbers is: "<<(x+y)<<endl;
-    cout<<"The difference of two numbers is: "<<(x-y)<<endl;
-    cout<<"The product of two numbers is: "<<(x*y)<<endl;
-    cout<<"The division of two numbers is: "<<(x/y)<<endl;
-}
+// cout<<endl;
+// cout<<"Enter the value of y: ";
+// cin>>y;
+// }
+// void displayData(){
+//     cout<<"The sum of two numbers is: "<<(x+y)<<endl;
+//     cout<<"The difference of two numbers is: "<<(x-y)<<endl;
+//     cout<<"The product of two numbers is: "<<(x*y)<<endl;
+//     cout<<"The division of two numbers is: "<<(x/y)<<endl;
+// }
 
-};
+// };
 
-class ScientificCalculator{
-    public:
-    int a,b;
-    void setData1(){
-        cout<<"Enter the value of a: ";
-cin>>a;
+// class ScientificCalculator{
+//     public:
+//     int a,b;
+//     void setData1(){
+//         cout<<"Enter the value of a: ";
+// cin>>a;
 
-cout<<endl;
-cout<<"Enter the value of b: ";
-cin>>b;
-    }
+// cout<<endl;
+// cout<<"Enter the value of b: ";
+// cin>>b;
+//     }
 
-    void displayData1(){
-       cout<<"The max of two numbers is: "<<max(a,b)<<endl;
-    cout<<"The remainder of two numbers is: "<<(a%b)<<endl;
-    cout<<"The square root sum of two numbers is: "<<(sqrt(a)+sqrt(b))<<endl;
-    cout<<"The power of two numbers is: "<<pow(a,b)<<endl;  
-    }
-};
+//     void displayData1(){
+//        cout<<"The max of two numbers is: "<<max(a,b)<<endl;
+//     cout<<"The remainder of two numbers is: "<<(a%b)<<endl;
+//     cout<<"The square root sum of two numbers is: "<<(sqrt(a)+sqrt(b))<<endl;
+//     cout<<"The power of two numbers is: "<<pow(a,b)<<endl;  
+//     }
+// };
 
-class Derived:public SimpleCalculator, public ScientificCalculator{
-
-};
-
-
-
-int main(){
-
-    Derived D;
-    D.setData();
-    D.displayData();
+// class Derived:public SimpleCalculator, public ScientificCalculator{
+// //--->MULTIPLE INHERITANCE
+// //--->PUBLIC MODE OF INHERITANCE
+// };
 
 
-    D.setData1();
-    D.displayData1();
+
+// int main(){
+
+//     Derived D;
+//     D.setData();
+//     D.displayData();
+
+
+//     D.setData1();
+//     D.displayData1();
    
 
+//     return 0;
+// }
+
+#include<bits/stdc++.h>
+using namespace std;
+class Solution{
+public:
+int sum;
+int printSum(int N){
+    for(int i=1;i<=N;i++){
+sum++;
+    }
+    return sum;
+
+}
+};
+
+int main(){
+    Solution obj;
+    int N;
+    cin>>N;
+
+    int result=obj.printSum(N);
+    cout<<"result is: "<<result<<endl;
     return 0;
 }
