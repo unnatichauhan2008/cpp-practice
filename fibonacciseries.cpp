@@ -2,7 +2,9 @@
 using namespace std;
 
 int fib(int n){
-if (n<2){
+   
+
+if (n>2 ){
     return 1;
 }
 return fib(n-2)+ fib(n-1);
@@ -18,4 +20,4 @@ return 0;
 }
 
 
-
+//--->FIBONACCI SERIES IS: 0,1,1,2,3,5,8,13,21.........
